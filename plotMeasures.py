@@ -11,10 +11,11 @@ def plotMeasure(fileName):
     plt.savefig(f"{fileName}.png")
     plt.clf()
 
+# dijkstraA 10 ** 3, 10 ** 3 + 1000 * len(nums), 1000)
 toPlot = [
-    "dijkstraB",
-    "bellmanFordA",
-    "bellmanFordB"
+    "dijkstraB", # 10 ** 1, 10 ** 1 + 1000 * len(nums), 1000)
+    "bellmanFordA", # 10 ** 1, 10 ** 1 + 1000 * len(nums), 1000)
+    "bellmanFordB" # 10 ** 1, 10 ** 1 + 1000 * len(nums), 1000)
 ]
 for name in toPlot:
     plotMeasure(name )
