@@ -1,4 +1,4 @@
-from DXHeap import DXHeap
+from Dijkstra.DXHeap import DXHeap
 class Pair:
     value = (0, 0)
     def __init__(self, p) -> None:

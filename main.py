@@ -1,5 +1,5 @@
-from BellmanFord import BellmanFordMeasure
-from Dijkstra import DijkstraMeasure
+from Bellman.BellmanFord import BellmanFordMeasure
+from Dijkstra.Dijkstra import DijkstraMeasure
 def saveTimesWithName(times, name):
     toSave = ""
     for time in times:

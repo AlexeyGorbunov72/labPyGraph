@@ -1,4 +1,3 @@
-from PriorityQueue import PriorityQueue
 import sys
 import time
 from random import random, seed

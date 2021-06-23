@@ -1,4 +1,4 @@
-from PriorityQueue import PriorityQueue
+from Dijkstra.PriorityQueue import PriorityQueue
 import sys
 import time
 from random import random, seed
