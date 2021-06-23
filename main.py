@@ -15,7 +15,7 @@ def collectDataDijkstraA():
         print(n / 10 ** 5 * 100)
         m = 100 * n
         timedijkstra = dijkstra.measure(n=n, m=m)
-        saveTimesWithName([timedijkstra], "dijkstraA")
+        saveTimesWithName([timedijkstra], "./datasources/dijkstraA")
         dijkstraTimes.append(timedijkstra)
 
 def collectDataDijkstraB():
@@ -24,7 +24,7 @@ def collectDataDijkstraB():
         print(n / 10 ** 5 * 100)
         m = 1000 * n
         timedijkstra = dijkstra.measure(n=n, m=m)
-        saveTimesWithName([timedijkstra], "dijkstraB")
+        saveTimesWithName([timedijkstra], "./datasources/dijkstraB")
 
 def collectDataBellmanFordA():
     bellmanFord = BellmanFordMeasure()
@@ -32,7 +32,7 @@ def collectDataBellmanFordA():
         print(n / 10 ** 5 * 100)
         m = 100 * n
         timeBellman = bellmanFord.measure(n=n, m=m)
-        saveTimesWithName([timeBellman], "bellmanFordA")
+        saveTimesWithName([timeBellman], "./datasources/bellmanFordA")
 
 def collectDataBellmanFordB():
     bellmanFord = BellmanFordMeasure()
@@ -47,6 +47,8 @@ funcs = [
     collectDataBellmanFordA,
     collectDataBellmanFordB
     ]
-
+file = open("./datasources/dijkstraC.txt", 'w')
+file.close()
+exit()
 for f in funcs:
     f()
